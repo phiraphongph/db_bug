@@ -7,9 +7,4 @@ docker run -p 5001:8000 -d \
 <<<<<<< HEAD
 =======
 
-# # ✅ รัน CLI คำสั่ง `create_db` และ `seed_db` ใน Container
-# echo "🚀 Initializing database..."
-# docker exec -it ${app} python manage.py create_db
-# docker exec -it ${app} python manage.py seed_db
-# echo "✅ Database setup completed!"
 >>>>>>> Initial commit
