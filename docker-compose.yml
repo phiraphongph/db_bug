@@ -1,0 +1,35 @@
+name: "project"
+services:
+  flask:
+    build: flask # ระบุว่า Dockerfile อยู่ในโฟลเดอร์ "flask"
+    ports:
+      - "5001:8000"
+    volumes:
+      - ./flask:/flask_app # Mount โฟลเดอร์ "flask" บนโฮสต์ → "/flask_app" ในคอนเทนเนอร์
+      # ทำให้สามารถแก้ไขโค้ดในโฟลเดอร์ flask บนเครื่อง แล้วอัปเดตในคอนเทนเนอร์ทันที
+    env_file:
+      - .env.dev # โหลดค่าตัวแปรจากไฟล์ ".env.dev" เข้าไปในคอนเทนเนอร์
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+<<<<<<< HEAD
+          memory: 256M
+=======
+          memory: 256M
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: Quizzilla
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
+>>>>>>> Initial commit

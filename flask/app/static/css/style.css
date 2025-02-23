@@ -1,0 +1,146 @@
+body {
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Irish Grover', cursive;
+    font-size: 6rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-family: 'Afacad', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 300px;
+    margin: 20px 20px;
+}
+
+.start-btn {
+    font-family: 'Afacad', cursive;
+    background: #e0e0e0;
+    border: 1.5px solid rgb(0, 0, 0);;
+    padding: 5px 100px;
+    font-size: 2rem;
+    font-weight: 550;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.start-btn:hover {
+    background: #d6d6d6;
+}
+
+.image img {
+    width: 600px;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    grid-column: 4;
+    grid-row: 1 / span 4;
+    margin-top: 30px;
+
+
+}
+
+/* ฟอร์มและปุ่ม */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 50px;
+    border-radius: 80px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background: #919191;
+}
+
+/* ปุ่ม Google Login */
+.google-login {
+    background: white;
+    border: 1px solid #000000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 80%;
+}
+
+.google-login img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.box {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #a7a7a7;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 80px;
+    border: 1px solid #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 220px 190px 400px;
+
+}
+
+.grid-container {
+    margin-right: 50%;
+
+}
+
+.item1 {
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 1;
+}
+  
+.item2 {
+    grid-column: 3;
+    grid-row: 3/ span 2;
+}
+
+.item3 {
+    grid-column: 1/ span 2;
+    grid-row: 4;
+}

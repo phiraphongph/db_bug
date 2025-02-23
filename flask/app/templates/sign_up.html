@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="grid-container">
+    <div class="container">
+        <div class="item1"><img src="../static/img/sign_up1.png" width="320"></div>
+        <div class="item2"><img src="../static/img/login2.png" width="200"></div>
+        <div class="item3"><img src="../static/img/sign_up3.png" width="260"></div>
+
+
+        <div class="login-box">
+            <h3 style="font-family: 'Irish Grover', cursive;">Create your Account</h3>
+            <form>
+                <p><input type="name" placeholder="Enter your name" required></p>
+                <p><input type="email" placeholder="Enter your Email" required></p>
+                <p><input type="email" placeholder="School(optional)" required></p>
+                <p><input type="password" placeholder="Enter a Password" required></p>
+                <input type="password" placeholder="Confirm your Password" required>
+                <p><button class="box" type="submit">Sing up</button></p>
+            </form>
+            <p>or</p>
+            <button class="google-login">
+                <img src="../static/img/google-logo.png" alt="Google"> Continue with Google
+            </button><p></p>
+
+            <p style="font-size: 0.9rem;">Already a LearnQuest? <a href="#">Log in here</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
