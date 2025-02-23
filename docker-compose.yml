@@ -14,9 +14,6 @@ services:
         limits:
           memory: 512M
         reservations:
-<<<<<<< HEAD
-          memory: 256M
-=======
           memory: 256M
   db:
     image: postgres:15
@@ -32,4 +29,3 @@ services:
       - postgres_data:/var/lib/postgresql/data
 volumes:
   postgres_data:
->>>>>>> Initial commit
